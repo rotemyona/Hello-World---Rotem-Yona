@@ -1,0 +1,54 @@
+*{
+    background-color:lightgray
+}
+body {
+    background-color:white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 380px 380px 380px;
+    grid-template-rows: auto 250px 250px;
+    grid-gap: 20px; 
+    padding: 10px;
+    background-color: rgba(225, 233, 243, 0.5);
+}
+.Details{ 
+    grid-column: 1 / span 3;
+    grid-row: 1/  1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.Experience {
+    grid-column: 1 / 1;
+    grid-row: 2/ span 3 ;
+}
+.education {
+    grid-column: 2/ 2;
+    grid-row:2 / 2 ;
+}
+.SocialMedia{
+    grid-column: 3/ 3;
+    grid-row: 2/  2;
+}
+.Languages{
+    grid-row: 3/  3;
+    grid-column: 2/  2;
+}
+.skills {
+    grid-row:3/  3;
+    grid-column: 3/  3;
+}
+
+h1 {
+    text-align:center ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    background-color: rgb(160, 150, 150 0.8);
+}
+h2 { 
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
