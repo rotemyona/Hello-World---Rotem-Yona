@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <title>This is JS project</title>
+        <script> 
+        function function2(params) {
+            document.getElementById('P3').innerHTML = 'after the change';
+        }
+        function function3() {
+            document.getElementById("pic1").src = "pic2.jfif";
+        }
+         </script>
+    </head>
+
+    <body>
+        <h1> This is Rotem's JS test </h1>
+        <p id = "P1"> </p>
+            <script> 
+            document.getElementById('P1').innerHTML = "this is after chandge";
+            </script> 
+        <p id = "P2"> </p>
+            <script> 
+                function function1(a,b){
+                    return  a-b;
+                 } 
+                 document.getElementById("P2").innerHTML = function1(20,6);
+            </script>
+        <p id = "P3"> random text </p>
+        <button type="button" onclick="function2()">Text Changer </button>
+        <br> <br>
+
+        <img id="pic1" src = "pic1.jfif" alt = "picture 1">
+        <br> <br>
+
+        <button type="button" onclick="function3()">change pic</button>
+        
+    </body>
+</html>
