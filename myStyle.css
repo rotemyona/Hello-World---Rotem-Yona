@@ -1,0 +1,97 @@
+HTML{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding: 10px;
+    background-color: whitesmoke;
+}  
+.grid-container{
+      display: grid;
+      justify-items: center;
+      grid-template-areas: 'left left right right right';
+      grid-row: gap 10px;
+      margin: 20px;
+      padding: 25px;
+}          
+
+.item1{
+  float: left;
+  height: 100%;
+  background-color: rgb(218, 216, 216, 0.3)  ;
+  padding: 25px;
+  font-family:Raleway-bold;
+  width: 450px;
+}
+.p1{
+  font-size:40px;
+}
+
+.p2{
+  font-family:Raleway ;
+  font-size: 25px;
+}
+
+
+.item2{
+  float: right;
+  height:100%;
+  background-color:rgb(35, 68, 35);
+  padding: 25px;
+  justify-content: center;
+  width: 450px;
+  position: fixed;
+  right: 26px;
+
+}
+
+.pic1{
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 7%;
+  width: 350px;
+}
+.button1 {
+  background-color: rgba(206, 206, 168, 0.5);
+  font-family:Raleway-bold;
+  font-size: 25px;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  color: white;
+  padding: 7px 7px;
+  text-align: center;
+  margin-left: 38%;
+}
+
+.button1:hover {
+  background-color: #83af84; 
+  color: white;
+}
+.button2{
+  display: inline;
+  background-color: rgba(206, 206, 168, 0.5);
+  font-family:Raleway;
+  font-size: 15px;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  color: white;
+  padding: 3px 3px;
+  margin: 10px;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+@font-face{
+  font-family:Raleway-bold;
+  src: url(Raleway-Bold.ttf);
+}
+
+@font-face{
+  font-family:Raleway;
+  src: url(Raleway-Medium.ttf);
+}
