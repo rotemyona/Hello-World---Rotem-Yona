@@ -6,3 +6,6 @@ function changpic2(x) {
     x.src ="meforcactus.jpg";
 }
 
+$(".btn").click(function(){
+    $(".input, .area").val("");
+  });
