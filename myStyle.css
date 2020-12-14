@@ -9,7 +9,7 @@ body{
 .grid-container{
       display: grid;
       justify-items: center;
-      grid-template-areas: 'left left right right right';
+      grid-template-areas: 'left lefts right right';
       grid-row: gap 10px;
       margin: 20px;
       padding: 25px;
@@ -98,24 +98,6 @@ body{
 *{
   margin: 0;
   padding: 0;
-}
-
-body{
-  background: url("https://i.imgur.com/wEDJfYM.jpg") no-repeat center;
-  background-size: cover;
-  height: auto;
-  font-family: 'Roboto';
-}
-
-
-.container{
-  max-width: 800px;
-  height: 600px;
-  background: #fff;
-  margin: 50px auto;
-  box-shadow: 0 0 20px rgba(72,98,85, 0.6);
-  box-sizing: border-box;
-  padding: 40px;
 }
 
 p{
