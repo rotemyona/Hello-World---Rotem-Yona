@@ -11,7 +11,7 @@ body{
 .grid-container{
       display: grid;
       justify-items: center;
-      grid-template-areas: 'left lefts right right';
+      grid-template-areas: 'left left right right';
       grid-row: gap 10px;
       margin: 20px;
       padding: 25px;
