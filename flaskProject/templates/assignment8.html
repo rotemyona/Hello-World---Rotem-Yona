@@ -1,0 +1,25 @@
+<!doctype html>
+<html  lang="">
+<head>
+    <title>assignment8</title>
+</head>
+<body>
+<div>
+    {%  set user = {'firstname':"Rotem", 'lastname':"Yona"} %}
+    <h1>Hello {{ user.firstname|center }} {{ user.lastname | center }}</h1>
+       <h2>My Hobbies:</h2>
+    {% for hobby in hobbies %}
+    <li style="color: #486255">{{hobby}}</li>
+    {% endfor %}
+</div>
+
+{% block cart %}
+{% if user %}
+<h2>its amazing</h2>
+{% else %}
+<h2>not that good</h2>
+{% endif %}
+{% include('CV_Rotem_Yona.html') %}
+{% endblock %}
+</body>
+</html>

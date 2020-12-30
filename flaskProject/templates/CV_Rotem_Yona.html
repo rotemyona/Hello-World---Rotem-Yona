@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang=""> 
+    <head> 
+        <title>Rotem Yona CV </title>
+        <link rel ="stylesheet" href ="{{ url_for('static', filename='css/myStyle.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='JS/CV_JS.js') }}">
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <div class="item1">
+              <br>
+              <br>
+                <p class="p1"> 
+                  <br>
+                  <br>
+                  Hi!<br>I'm Rotem Yona </p>
+                <p class="p2" >Last year student for<br>
+                         Information System Management,<br>
+                        Great at team work,<br> 
+                        Love cold beer and my dog.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>                  
+                            <p>Leave me a message</p>
+                            
+                            <div class="login">
+                              <input type="text" placeholder="Your Name" class="input">
+                              <input type="text" placeholder="Your Email Address" class="input">
+                            </div>
+                            
+                            <div class="subject">
+                              <input type="text" placeholder="Subject" class="input">
+                            </div>
+                            
+                            <div class="msg">
+                              <textarea  class="area" placeholder="Leave a Message"></textarea>
+                            </div>
+                            
+                            <div class="btn" >Send Message</div>
+              
+                
+            </div>
+
+            <div class="item2">
+                <a class = "button1"  href ="../static/files/CV1.pdf" target="_blank">Full CV</a>
+                <br>
+                <br>
+                <a class = "button1"  href ="{{ url_for('static', filename='templates/UserList.html') }}" target="_blank">User List</a>
+                <img class = "pic1" src = "../static/JS/meforcactus.jpg" alt = "Me" onmouseover="changepic1(this)" onmouseout="changpic2(this)">
+                <a class= "button2" href="https://www.linkedin.com/in/rotem-yona-a2b502197/" target="_blank" >linkedin</a>
+                <a class= "button2" href="https://www.facebook.com/rotem.yona.96" target="_blank" >Facebook</a>
+               <br>
+               <br>
+             
+                <ul class = "ul1">
+                 <li>Phone number:052-6351232</li>
+                 <li>Email:Yona301@gmail.com</li>
+               </ul>
+
+            </div>
+        </div>     
+        </body>
+
+
+</html>
