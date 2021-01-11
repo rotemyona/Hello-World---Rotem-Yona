@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW9 - Rotem Yona</title>
+</head>
+
+<body style="background-color: beige;">
+    {% if session.get('login') %}
+        <h2>Hi {{ session.get('Name') }}!</h2>
+        <form action="/logout" method="GET">
+            <button type="submit">Log Out</button>
+        </form>
+
+    {% else %}
+        <h2>Hi Guest!</h2>
+            <div class="registration">
+        <h2>Register Here</h2>
+        <form action="/assignment9" method="POST">
+
+            <label for="Name">Name:</label>
+            <input name="Name" type="text" placeholder="Your UserName" style=>
+            <br>
+            <label for="User">Password:</label>
+            <input name="Password" type="password" placeholder="Your Password" minlength = '7'>
+            <button type="submit">login</button>
+        </form>
+    </div>
+    {% endif %}
+
+    <br>
+    <br>
+
+    <div class="search">
+
+        <h2>Search Here</h2>
+
+        <form action="/assignment9" method="GET">
+            <label for="search">Search:</label>
+            <input type="text" NAME="inputSearch" placeholder="Write Here">
+            <button type="submit">Search</button>
+        </form>
+
+         <div>
+             {% if search == '' %}
+                 <h2>Search Result</h2>
+                {% for name in users %}
+                    <h3>{{ name.Name }}, {{ name.mail }}</h3>
+                 {% endfor %}
+             {% endif %}
+
+             {% if search %}
+                 <h2>Search Result</h2>
+                 {% for name in users %}
+                   {% if name.Name == search or name.mail == search  %}
+                        <h3>{{ name.Name }}, {{ name.mail }}</h3>
+                   {% endif %}
+                {% endfor %}
+
+            {% endif %}
+        </div>
+    </div>
+
+
+</body>
+</html>
